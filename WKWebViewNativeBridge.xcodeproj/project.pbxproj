@@ -13,6 +13,7 @@
 		E320A5C326D9F2F7004CB6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E320A5C126D9F2F7004CB6A2 /* Main.storyboard */; };
 		E320A5C526D9F2F8004CB6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E320A5C426D9F2F8004CB6A2 /* Assets.xcassets */; };
 		E320A5C826D9F2F8004CB6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E320A5C626D9F2F8004CB6A2 /* LaunchScreen.storyboard */; };
+		E320A5D026D9F509004CB6A2 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E320A5CF26D9F509004CB6A2 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E320A5C426D9F2F8004CB6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E320A5C726D9F2F8004CB6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E320A5C926D9F2F8004CB6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E320A5CF26D9F509004CB6A2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E320A5BA26D9F2F7004CB6A2 /* WKWebViewNativeBridge */ = {
 			isa = PBXGroup;
 			children = (
+				E320A5CF26D9F509004CB6A2 /* index.html */,
 				E320A5BB26D9F2F7004CB6A2 /* AppDelegate.swift */,
 				E320A5BD26D9F2F7004CB6A2 /* SceneDelegate.swift */,
 				E320A5BF26D9F2F7004CB6A2 /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E320A5C826D9F2F8004CB6A2 /* LaunchScreen.storyboard in Resources */,
+				E320A5D026D9F509004CB6A2 /* index.html in Resources */,
 				E320A5C526D9F2F8004CB6A2 /* Assets.xcassets in Resources */,
 				E320A5C326D9F2F7004CB6A2 /* Main.storyboard in Resources */,
 			);
