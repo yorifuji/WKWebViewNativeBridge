@@ -39,6 +39,15 @@ extension ViewController {
         let localHTMLUrl = URL(fileURLWithPath: path, isDirectory: false)
         webView.loadFileURL(localHTMLUrl, allowingReadAccessTo: localHTMLUrl)
     }
+}
+
+extension ViewController: WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if(message.name == handlerName) {
+            print(message.body)
+            evalJavaScript()
+        }
+    }
 
     private func evalJavaScript() {
         let message = "asynchronus message."
@@ -53,15 +62,6 @@ extension ViewController {
         })
     }
 
-}
-
-extension ViewController: WKScriptMessageHandler {
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if(message.name == handlerName) {
-            print(message.body)
-            evalJavaScript()
-        }
-    }
 }
 
 extension ViewController: WKUIDelegate {
